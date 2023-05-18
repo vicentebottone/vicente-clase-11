@@ -1,0 +1,241 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: darkgray;
+    width: auto;
+}
+
+
+
+h1{
+    color: aliceblue;
+}
+
+
+/* estilos del header */
+.titulo-principal{
+    text-decoration: none;
+    color: beige;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: cadetblue ;
+    margin: 0;
+    border-color: rgb(123, 124, 124);  
+    width: 100%;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+/* estilos del main */
+
+
+main nav ul li{
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    gap: 80px;
+    padding-left: 0px;
+    margin: 10px;
+    background-color: darkgrey;
+    color: brown;
+}
+
+main .destacados{
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: beige;
+}
+
+main form{
+    background-color: darkgray;
+    text-align: center;
+    padding: 100px;
+}
+
+.direccion{
+    width: 1px;
+    height: 1px;
+    z-index: 2;
+}
+
+main h1{
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    background-color: beige;
+}
+
+main h2{
+    text-align: center;
+    color: white;
+}
+
+main h3{
+    text-align: center;
+}
+
+main h4{
+    color: beige;
+    text-align: center;
+}
+
+.video-ilustrativo{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+main p{
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+main .foto-conocenos{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+main form fieldset{
+    box-sizing: border-box;
+    background-color: beige;
+    margin: 10px;
+    padding: 10px;
+    border-style: none;
+}
+
+main div .boton-verahora{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    color: beige;
+}
+
+
+/* estilos de la section de productos */
+
+
+section h2{
+    color: black;
+    background-color: beige;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+section .caja2 .card-nueve, .card-diez{
+    position: relative;
+    text-align: center;
+}
+
+
+/* estilos del footer */
+
+footer div ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+footer div ul li .iglogo{
+    position: sticky;
+    width: 2px;
+    height: 2px;
+    bottom: 5px;
+    left: 20px;
+    text-align: center;
+    padding: 0;
+}
+
+footer div .wpplogo{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 0px;
+    background-color: green;
+    color: green;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: beige;
+    height: 150px;
+    color: rgb(15, 15, 15);
+    gap: 100px;
+}
+.boton-volver-arriba{
+    display: inline-block;
+    padding: 20px;
+    position: sticky;
+    left: 0;
+    margin: 0;
+}
+
+/* Aplicando Grid */
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+section{
+    grid-area: section;
+}
+
+
+main .caja2{
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 1.5fr 0.5fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+}
+
+header nav ul .color-nav{
+    background-color: cadetblue;
+}
